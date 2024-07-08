@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { FieldError, UseFormRegister } from 'react-hook-form'
 
+import eye from '@/assets/eye.svg'
+import eyeOff from '@/assets/eye-off.svg'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useShowPassword } from '@/hooks/useShowPassword'
@@ -48,14 +50,9 @@ export function InputField({
             onClick={(e) => handleShowPassword(e)}
           >
             {showPassword ? (
-              <Image
-                src="/eye-off.svg"
-                alt="Ocultar senha"
-                width={16}
-                height={16}
-              />
+              <Image src={eyeOff} alt="Ocultar senha" width={16} height={16} />
             ) : (
-              <Image src="/eye.svg" alt="Exibir senha" width={16} height={16} />
+              <Image src={eye} alt="Exibir senha" width={16} height={16} />
             )}
           </Button>
         </div>

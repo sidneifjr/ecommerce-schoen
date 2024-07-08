@@ -4,6 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { use } from 'react'
 
+import cart from '@/assets/cart.svg'
+import customer from '@/assets/customer.svg'
+import logo from '@/assets/logo.svg'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -11,17 +14,19 @@ import {
 } from '@/components/ui/navigation-menu'
 import { CartContext } from '@/contexts/cart-context'
 
+import { H1 } from './typography/h1'
+
 const menuItens = [
   {
     name: 'Carrinho',
     url: '/cart',
-    image: '/cart.svg',
+    image: cart,
     alt: 'Carrinho',
   },
   {
     name: 'Entrar',
     url: '/login',
-    image: '/customer.svg',
+    image: customer,
     alt: 'Entrar',
   },
 ]
@@ -35,17 +40,20 @@ export function Header() {
       data-testid="header"
     >
       <div className="mx-auto flex max-w-[1232px] items-center justify-between">
-        <Link href="/">
+        <Link href="/" className="flex items-center gap-4">
           <Image
-            src="/logo.svg"
-            alt="Flow Lab Tech"
+            src={logo}
+            alt="E-commerce Schoen"
             data-testid="logo"
-            width={147}
-            height={24}
+            width={45}
+            height={45}
             quality={100}
             priority={true}
-            className="w-24 xs:w-auto"
           />
+
+          <H1 className="text-green-light text-2xl font-semibold uppercase tracking-tighter">
+            Schoen
+          </H1>
         </Link>
 
         <NavigationMenu>

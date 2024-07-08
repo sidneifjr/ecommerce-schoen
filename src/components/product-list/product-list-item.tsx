@@ -12,8 +12,8 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { CartContext } from '@/contexts/cart-context'
-import { formatCurrency } from '@/utils/formatCurrency'
 import { ProductItemTypes } from '@/types'
+import { formatCurrency } from '@/utils/formatCurrency'
 
 import { Button } from '../ui/button'
 

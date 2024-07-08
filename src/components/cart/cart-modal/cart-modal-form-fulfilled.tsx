@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 
+import orderFulfilled from '@/assets/order-fulfilled.svg'
 import { H3 } from '@/components/typography/h3'
 import { Paragraph } from '@/components/typography/paragraph'
 import { Button } from '@/components/ui/button'
@@ -16,7 +17,7 @@ export function CartModalFormFulfilled() {
     <form className="flex flex-col gap-6 p-6">
       <div className="flex flex-col items-center gap-1">
         <Image
-          src="/order-fulfilled.svg"
+          src={orderFulfilled}
           alt="Ocultar senha"
           width={160}
           height={160}

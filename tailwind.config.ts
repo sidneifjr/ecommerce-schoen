@@ -55,6 +55,8 @@ const config = {
 
         'gray-500': '#6B7280',
         'primary-500': '#FF7600',
+        'green-light': '#00b37e',
+        'green-bold': '#00875f',
       },
       fontFamily: {
         poppins: 'Poppins, sans-serif',

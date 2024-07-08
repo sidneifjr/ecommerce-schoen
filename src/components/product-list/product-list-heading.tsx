@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { UseFormRegister } from 'react-hook-form'
 
+import search from '@/assets/search.svg'
 import { ProductListInputFields } from '@/types'
 
 import { H2 } from '../typography/h2'
@@ -34,7 +35,7 @@ export function ProductListHeading({
           variant="ghost"
           className="absolute right-0 top-[50%] translate-y-[-50%]"
         >
-          <Image src="/search.svg" alt="Search" width={12} height={12} />
+          <Image src={search} alt="Search" width={12} height={12} />
         </Button>
       </div>
     </div>

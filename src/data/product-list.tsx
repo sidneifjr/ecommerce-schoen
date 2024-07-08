@@ -1,14 +1,13 @@
+import product1 from '@/assets/products/product-1.png'
+import product2 from '@/assets/products/product-2.png'
+import product3 from '@/assets/products/product-3.png'
+
 export const productList = [
   {
     id: 1,
     name: 'Sapatênis Masculino Branco Tênis Casual FLOW para Dia a Dia - Camursa',
-    image: '/products/product-1.png',
-    slides: [
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-    ],
+    image: product1,
+    slides: [product1, product2, product3, product1],
     slug: '/products/product-1',
     price: 270,
     category: 'sapatênis',
@@ -17,13 +16,8 @@ export const productList = [
   {
     id: 2,
     name: 'Sandália de Corrida Masculino - Camursa',
-    image: '/products/product-2.png',
-    slides: [
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-      '/products/product-2.png',
-    ],
+    image: product2,
+    slides: [product2, product3, product1, product2],
     slug: '/products/product-2',
     price: 220,
     category: 'sandália',
@@ -32,13 +26,8 @@ export const productList = [
   {
     id: 3,
     name: 'Tênis Masculino Branco Tênis Casual FLOW para Dia a Dia',
-    image: '/products/product-3.png',
-    slides: [
-      '/products/product-3.png',
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-    ],
+    image: product3,
+    slides: [product3, product1, product2, product3],
     slug: '/products/product-3',
     price: 120,
     category: 'tênis',
@@ -47,13 +36,8 @@ export const productList = [
   {
     id: 4,
     name: 'Chinelos Masculino Branco Casual FLOW para Dia a Dia',
-    image: '/products/product-1.png',
-    slides: [
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-    ],
+    image: product1,
+    slides: [product1, product2, product3, product1],
     slug: '/products/product-4',
     price: 70,
     category: 'chinelos',
@@ -62,13 +46,8 @@ export const productList = [
   {
     id: 5,
     name: 'Chuteiras Masculino Branco Casual FLOW para Dia a Dia - Camursa',
-    image: '/products/product-2.png',
-    slides: [
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-      '/products/product-2.png',
-    ],
+    image: product2,
+    slides: [product2, product3, product1, product2],
     slug: '/products/product-5',
     price: 370,
     category: 'chuteiras',
@@ -77,13 +56,8 @@ export const productList = [
   {
     id: 6,
     name: 'Sandálias Masculino Branco Casual FLOW para Dia a Dia - Camursa',
-    image: '/products/product-3.png',
-    slides: [
-      '/products/product-3.png',
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-    ],
+    image: product3,
+    slides: [product3, product1, product2, product3],
     slug: '/products/product-6',
     price: 400,
     category: 'sandálias',
@@ -92,13 +66,8 @@ export const productList = [
   {
     id: 7,
     name: 'Chinelos Masculino Branco Casual FLOW para Dia a Dia',
-    image: '/products/product-1.png',
-    slides: [
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-    ],
+    image: product1,
+    slides: [product1, product2, product3, product1],
     slug: '/products/product-7',
     price: 270,
     category: 'chinelos',
@@ -107,13 +76,8 @@ export const productList = [
   {
     id: 8,
     name: 'Tênis Masculino Branco Casual FLOW - Camursa',
-    image: '/products/product-2.png',
-    slides: [
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-      '/products/product-2.png',
-    ],
+    image: product2,
+    slides: [product2, product3, product1, product2],
     slug: '/products/product-8',
     price: 270,
     category: 'tênis',
@@ -122,13 +86,8 @@ export const productList = [
   {
     id: 9,
     name: 'Sapatênis Masculino Branco Casual FLOW Noturno',
-    image: '/products/product-3.png',
-    slides: [
-      '/products/product-3.png',
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-    ],
+    image: product3,
+    slides: [product3, product1, product2, product3],
     slug: '/products/product-9',
     price: 270,
     category: 'sapatênis',
@@ -138,13 +97,8 @@ export const productList = [
   {
     id: 10,
     name: 'Botas Masculino Casual Noturno',
-    image: '/products/product-3.png',
-    slides: [
-      '/products/product-1.png',
-      '/products/product-2.png',
-      '/products/product-3.png',
-      '/products/product-1.png',
-    ],
+    image: product3,
+    slides: [product1, product2, product3, product1],
     slug: '/products/product-10',
     price: 370,
     category: 'botas',

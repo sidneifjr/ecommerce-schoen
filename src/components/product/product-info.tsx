@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { MouseEvent, use } from 'react'
 import { toast } from 'sonner'
 
+import pix from '@/assets/pix.svg'
 import { H2 } from '@/components/typography/h2'
 import { H3 } from '@/components/typography/h3'
 import { Button } from '@/components/ui/button'
@@ -56,7 +57,7 @@ export function ProductInfo({
 
       <div className="flex flex-1 flex-col items-center justify-center gap-4 bg-gray-50 py-5">
         <Image
-          src="/pix.svg"
+          src={pix}
           alt="pix"
           width={20}
           height={20}

@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
+import checkCircle from '@/assets/check-circle.svg'
+import close from '@/assets/close.svg'
+import customer from '@/assets/customer.svg'
 import {
   Dialog,
   DialogClose,
@@ -34,7 +37,7 @@ export function CartModal({ children }: CartModalTypes) {
               {!modal.isSubmitSuccessful ? (
                 <>
                   <Image
-                    src="/customer.svg"
+                    src={customer}
                     alt="Cadastre-se"
                     width={13}
                     height={13}
@@ -45,7 +48,7 @@ export function CartModal({ children }: CartModalTypes) {
               ) : (
                 <>
                   <Image
-                    src="/check-circle.svg"
+                    src={checkCircle}
                     alt="Sucesso!"
                     width={13}
                     height={13}
@@ -57,7 +60,7 @@ export function CartModal({ children }: CartModalTypes) {
             </div>
 
             <DialogClose className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-              <Image src="/close.svg" alt="Fechar" width={16} height={16} />
+              <Image src={close} alt="Fechar" width={16} height={16} />
               <span className="sr-only">Close</span>
             </DialogClose>
           </DialogTitle>

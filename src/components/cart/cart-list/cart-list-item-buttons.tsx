@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import { use } from 'react'
 
+import minus from '@/assets/minus.svg'
+import plus from '@/assets/plus.svg'
+import trash from '@/assets/trash.svg'
 import { Button } from '@/components/ui/button'
 import { CartContext } from '@/contexts/cart-context'
 import { ProductItemTypes } from '@/types'
@@ -15,7 +18,7 @@ export function CartListItemButtons(props: ProductItemTypes) {
         onClick={(e) => handleCartAction(e, 'delete', props.id)}
       >
         <Image
-          src="/trash.svg"
+          src={trash}
           alt="props 1"
           width={18}
           height={20}
@@ -29,7 +32,7 @@ export function CartListItemButtons(props: ProductItemTypes) {
           onClick={(e) => handleCartAction(e, 'remove', props.id)}
         >
           <Image
-            src="/minus.svg"
+            src={minus}
             alt="minus"
             width={12}
             height={1}
@@ -44,7 +47,7 @@ export function CartListItemButtons(props: ProductItemTypes) {
           onClick={(e) => handleCartAction(e, 'add', props)}
         >
           <Image
-            src="/plus.svg"
+            src={plus}
             alt="plus"
             width={12}
             height={12}

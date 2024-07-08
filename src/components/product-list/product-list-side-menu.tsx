@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import { UseFormRegister, UseFormSetValue } from 'react-hook-form'
 
+import search from '@/assets/search.svg'
+import { ProductListInputFields } from '@/types'
 import { capitalizeFirstLetter } from '@/utils/capitalizeFirstLetter'
 import { handleAccentedCharacters } from '@/utils/handleAccentedCharacters'
-import { ProductListInputFields } from '@/types'
 
 import { Slider } from '../slider'
 import { H3 } from '../typography/h3'
@@ -35,7 +36,7 @@ export function ProductListSideMenu({ register, setValue }: SideMenuProps) {
 
           <div className="relative flex w-full max-w-[400px] justify-between">
             <Image
-              src="/search.svg"
+              src={search}
               alt="Search"
               width={12}
               height={12}
