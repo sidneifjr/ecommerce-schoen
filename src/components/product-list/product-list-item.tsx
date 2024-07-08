@@ -79,7 +79,7 @@ export function ProductItem({
                 {formatCurrency(price)}
               </strong>
 
-              <small className="font-inter text-sm leading-[24px] text-primary-500">
+              <small className="font-inter text-sm font-semibold leading-[24px] text-green-light">
                 10% OFF
               </small>
             </span>
@@ -90,7 +90,7 @@ export function ProductItem({
       <CardFooter className="p-0">
         <Button
           variant="outline"
-          className="w-full rounded border-primary-500 p-6 text-sm leading-6 text-primary-500 transition-colors hover:bg-primary-500 hover:text-white"
+          className="w-full rounded border-green-light bg-green-light p-6 text-sm leading-6 text-white transition-colors hover:bg-white hover:text-green-light"
           onClick={(e) => handleItem(e)}
         >
           Adicionar ao carrinho

@@ -76,7 +76,7 @@ export function CartModalFormDefault({
 
       <Button
         variant="outline"
-        className="w-full rounded border-primary-500 bg-primary-500 p-6 text-sm font-normal leading-6 text-white transition-colors hover:bg-transparent hover:text-primary-500"
+        className="w-full rounded border-green-light bg-green-light p-6 text-sm leading-6 text-white transition-colors hover:bg-white hover:text-green-light"
         disabled={isSubmitting}
       >
         {isSubmitting ? <Loader /> : 'Criar minha conta'}

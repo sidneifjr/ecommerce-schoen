@@ -1,11 +1,8 @@
 'use client'
 
-import Image from 'next/image'
+import { CircleCheck, CircleUserRound, CircleX } from 'lucide-react'
 import { ReactNode } from 'react'
 
-import checkCircle from '@/assets/check-circle.svg'
-import close from '@/assets/close.svg'
-import customer from '@/assets/customer.svg'
 import {
   Dialog,
   DialogClose,
@@ -35,32 +32,28 @@ export function CartModal({ children }: CartModalTypes) {
           <DialogTitle className="flex justify-between p-6 font-inter text-base font-normal text-gray-500">
             <div className="flex gap-3">
               {!modal.isSubmitSuccessful ? (
-                <>
-                  <Image
-                    src={customer}
-                    alt="Cadastre-se"
-                    width={13}
-                    height={13}
-                    className="h-auto w-auto"
+                <span className="flex items-center gap-3">
+                  <CircleUserRound
+                    width={20}
+                    height={20}
+                    className="text-green-light"
                   />
                   Cadastre-se
-                </>
+                </span>
               ) : (
-                <>
-                  <Image
-                    src={checkCircle}
-                    alt="Sucesso!"
-                    width={13}
-                    height={13}
-                    className="h-auto w-auto"
+                <span className="flex items-center gap-3">
+                  <CircleCheck
+                    width={20}
+                    height={20}
+                    className="text-green-light"
                   />
                   Sucesso!
-                </>
+                </span>
               )}
             </div>
 
             <DialogClose className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-              <Image src={close} alt="Fechar" width={16} height={16} />
+              <CircleX className="text-green-bold" />
               <span className="sr-only">Close</span>
             </DialogClose>
           </DialogTitle>

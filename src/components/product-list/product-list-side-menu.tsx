@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import { UseFormRegister, UseFormSetValue } from 'react-hook-form'
 
-import search from '@/assets/search.svg'
 import { ProductListInputFields } from '@/types'
 import { capitalizeFirstLetter } from '@/utils/capitalizeFirstLetter'
 import { handleAccentedCharacters } from '@/utils/handleAccentedCharacters'
@@ -33,21 +31,6 @@ export function ProductListSideMenu({ register, setValue }: SideMenuProps) {
           <H3 className="font-poppins text-base font-semibold text-[#222222]">
             Categorias
           </H3>
-
-          <div className="relative flex w-full max-w-[400px] justify-between">
-            <Image
-              src={search}
-              alt="Search"
-              width={12}
-              height={12}
-              className="absolute right-3 top-[50%] translate-y-[-50%]"
-            />
-
-            <Input
-              className="w-full rounded-lg border-0 bg-gray-100 px-3 py-[14px] text-[14px] placeholder:text-gray-500"
-              placeholder="Pesquisar"
-            />
-          </div>
 
           <div className="grid grid-cols-2 gap-4 xs:grid-cols-4 lg:flex lg:flex-col">
             {categoryCheckboxes.map((item) => {

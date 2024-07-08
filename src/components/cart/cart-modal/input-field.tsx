@@ -1,3 +1,4 @@
+import { Eye, EyeOff } from 'lucide-react'
 import Image from 'next/image'
 import { FieldError, UseFormRegister } from 'react-hook-form'
 
@@ -50,9 +51,9 @@ export function InputField({
             onClick={(e) => handleShowPassword(e)}
           >
             {showPassword ? (
-              <Image src={eyeOff} alt="Ocultar senha" width={16} height={16} />
+              <Eye className="text-green-light" width={16} height={16} />
             ) : (
-              <Image src={eye} alt="Exibir senha" width={16} height={16} />
+              <EyeOff className="text-green-light" width={16} height={16} />
             )}
           </Button>
         </div>

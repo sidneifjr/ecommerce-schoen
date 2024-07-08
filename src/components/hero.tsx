@@ -6,7 +6,7 @@ import { H1 } from './typography/h1'
 export function Hero() {
   return (
     <div
-      className="flex justify-between bg-primary-500 lg:max-h-96 lg:min-h-96"
+      className="flex justify-between bg-green-light lg:max-h-96 lg:min-h-96"
       data-testid="hero"
     >
       <div className="flex flex-1 items-center pl-6 xl:pl-[100px] 2xl:justify-center">
