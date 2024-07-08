@@ -1,4 +1,4 @@
-# Teste Técnico - Desenvolvedor Frontend Pleno
+# E-commerce Schoen
 
 Feito com Node, v20.12.2.
 
@@ -12,11 +12,8 @@ Feito com Node, v20.12.2.
 - [x] **Responsividade**: A aplicação deve ser totalmente responsiva.
 - [x] **Next.js**: Utilize as funcionalidades de roteamento e geração de páginas estáticas do Next.js.
 - [x] **Estilização**: Utilize TailwindCSS ou CSS Modules.
-
-### O que nós ficaríamos felizes de ver em seu teste.
-
-- [x] Implementação de testes unitários e/ou de integração.
-- [x] Implementação de Server Components.
+- [x] **Testes**: Implementação de testes unitários e/ou de integração.
+- [x] **SSR**: Implementação de Server Components.
 
 ## Execução
 
@@ -67,7 +64,7 @@ Foi uma experiência enriquecedora e repleto de desafios, expondo oportunidades 
 
 <b>Zod</b> fornece validação de schemas, útil na validação de formulário ou variáveis de ambiente. O mesmo também executa durante o runtime, permitindo um type checking mais forte que o TypeScript em certos cenários.
 
-<b>Vitest</b> possui uma API muita semelhante ao Jest, ao mesmo tempo em que fornece um ganho significativo de performance. Uma integração com a <b>Testing Library</b> permite acesso à uma camada mais profunda de testes, enquanto <b>user-event</b> permite simular o disparo de eventos no lado cliente.
+<b>Vitest</b> possui uma API muita semelhante ao Jest, ao mesmo tempo em que fornece um ganho significativo de performance. A integração com a <b>Testing Library</b> permite acesso à uma camada mais profunda de testes, enquanto <b>user-event</b> permite simular o disparo de eventos no lado cliente.
 
 <b>pnpm</b> é um gerenciador de pacotes rápido e estável. Também é eficiente, reutilizando os pacotes já presentes em sua máquina, a qual é uma vantagem considerável sobre o <b>Bun</b>, dependendo do cenário.
 
@@ -84,38 +81,17 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
 ## Estrutura de pastas
 
 ```
-└── 📁technical-test
+└── 📁ecommerce-schoen
     └── .eslintrc.json
     └── .gitignore
     └── .prettierrc
     └── components.json
-    └── LICENSE
     └── next-env.d.ts
     └── next.config.mjs
     └── package.json
     └── pnpm-lock.yaml
     └── postcss.config.mjs
     └── 📁public
-        └── cart.svg
-        └── check-circle.svg
-        └── close.svg
-        └── customer.svg
-        └── eye-off.svg
-        └── eye.svg
-        └── hero-image.jfif
-        └── logo.svg
-        └── minus.svg
-        └── order-fulfilled.svg
-        └── pix.svg
-        └── plus.svg
-        └── product-image.png
-        └── 📁products
-            └── product-1.png
-            └── product-2.png
-            └── product-3.png
-        └── sad.svg
-        └── search.svg
-        └── trash.svg
         └── vercel.svg
     └── README.md
     └── 📁src
@@ -132,6 +108,14 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
                     └── page.tsx
         └── 📁assets
             └── loader.svg
+            └── logo.svg
+            └── order-fulfilled.svg
+            └── pix.svg
+            └── product-image.png
+            └── 📁products
+                └── product-1.png
+                └── product-2.png
+                └── product-3.png
         └── 📁components
             └── 📁cart
                 └── cart-details.tsx
@@ -191,15 +175,19 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
             └── useShowPassword.ts
         └── 📁lib
             └── utils.ts
-        └── 📁modules
+        └── 📁tests
+            └── header.test.tsx
+            └── hero.test.tsx
+            └── no-products-found.test.tsx
+        └── 📁types
+            └── index.ts
+        └── 📁utils
             └── capitalizeFirstLetter.ts
             └── formatCurrency.ts
             └── handleAccentedCharacters.ts
-        └── 📁tests
-            └── page.test.tsx
-        └── 📁types
-            └── index.ts
     └── tailwind.config.ts
+    └── 📁test
+        └── vitest.setup.ts
     └── tsconfig.json
     └── vitest.config.ts
 ```
@@ -207,37 +195,5 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
 ## Pontos de melhoria
 
 1) Testes unitários mais extensivos.
-2) Testes e2e, para validar Server Components (conforme recomendado pelos docs do Next.js, mas não é parte dos requisitos).
-3) Refatorar useFilterProducts, de forma a permitir amelhor interação entre as três funcionalidades de filtragem (não faz parte dos requisitos).
-
-## Instruções
-
-Olá, este é o teste que nós utilizamos para avaliar tecnicamente todas as pessoas que estão participando do processo seletivo para a vaga.
-
-Você deverá criar um **fork** deste projeto, e desenvolver em cima do seu fork. Use o **README** principal do seu repositório para nos contar como foi resolver seu teste, as decisões tomadas, como você organizou e separou seu código, e principalmente as instruções de como rodar seu projeto.
-
-Mostre que você é bom e nos impressione, mas não esqueça do objetivo do projeto.
-
-### Desafio.
-Este teste foi projetado para avaliar suas habilidades em React e Next. O objetivo é criar um site para marketplace onde os usuários possam visualizar produtos, filtrar por categorias, adicionar produtos ao carrinho e finalizar a compra. Utilize a API JSONPlaceholder (https://jsonplaceholder.typicode.com/) para simular o backend ou caso não conseguir, faça o gerenciamento por estados.
-
-**Observação**
-Estamos disponibilizando o figma do projeto para ser seguido: 
-
-[Protótipo](https://www.figma.com/proto/t3XDiGItGX4GAHtGavTT25/E-commerce-FLOW?node-id=3-3104&t=ZjljIpIHHZPSwrBI-0)
-
-[Layout](https://www.figma.com/design/t3XDiGItGX4GAHtGavTT25/E-commerce-FLOW?node-id=0-1&t=jhTM13489cfiVXfI-1)
-
-O protótipo é navegável, através dele você conseguirá ver todo o fluxo.
-
-### O que nós esperamos do seu teste.
-1. **Organização do Código**: Estrutura do projeto e clareza do código.
-2. **Funcionalidade**: Todos os requisitos funcionais devem ser atendidos.
-3. **Usabilidade**: A interface deve ser intuitiva e fácil de usar.
-4. **Performance**: A aplicação deve ser rápida e eficiente.
-5. **Boas Práticas**: Código limpo, reutilizável e seguindo as melhores práticas de desenvolvimento.
-6. **Documentação**: README claro e detalhado, explicando como rodar a aplicação e qualquer outro detalhe relevante.
-
-### O que nós não gostaríamos.
-- Descobrir que não foi você quem fez seu teste.
-- Ver commits grandes, sem muita explicação nas mensagens em seu repositório.
+2) Testes e2e, para validar Server Components (conforme recomendado pelos docs do Next.js).
+3) Refatorar useFilterProducts, de forma a permitir amelhor interação entre as três funcionalidades de filtragem.
