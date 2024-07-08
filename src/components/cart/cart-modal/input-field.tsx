@@ -48,9 +48,9 @@ export function InputField({
             onClick={(e) => handleShowPassword(e)}
           >
             {showPassword ? (
-              <Eye className="text-green-light" width={16} height={16} />
-            ) : (
               <EyeOff className="text-green-light" width={16} height={16} />
+            ) : (
+              <Eye className="text-green-light" width={16} height={16} />
             )}
           </Button>
         </div>
