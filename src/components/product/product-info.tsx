@@ -29,7 +29,7 @@ export function ProductInfo({
   price,
   category,
 }: ProductInfoTypes) {
-  const { addToCart } = use(CartContext)
+  const { handleCartAction } = use(CartContext)
 
   const router = useRouter()
 
@@ -38,7 +38,14 @@ export function ProductInfo({
 
     toast.success('Item adicionado ao carrinho!')
 
-    addToCart({ id, name, image, slug, price, category })
+    handleCartAction(e, 'add', {
+      id,
+      name,
+      image,
+      slug,
+      price,
+      category,
+    })
 
     router.push('/cart')
   }
