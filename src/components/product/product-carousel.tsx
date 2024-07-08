@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 import {
   Carousel,
@@ -12,7 +12,7 @@ import { useCarousel } from '@/hooks/useCarousel'
 import { ProductCarouselThumb } from './product-carousel-thumb'
 
 type CarouselTypes = {
-  slides: string[]
+  slides: StaticImageData[]
 }
 
 export function ProductCarousel({ slides }: CarouselTypes) {
@@ -34,7 +34,7 @@ export function ProductCarousel({ slides }: CarouselTypes) {
               <ProductCarouselThumb
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
-                slide={slide}
+                slide={slide.src}
               />
             </CarouselItem>
           ))}
@@ -51,7 +51,7 @@ export function ProductCarousel({ slides }: CarouselTypes) {
           {slides.map((slide) => (
             <CarouselItem key={crypto.randomUUID()} className="p-0">
               <Image
-                src={slide}
+                src={slide.src}
                 alt=""
                 width={471}
                 height={467}

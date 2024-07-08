@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useRouter } from 'next/navigation'
 import { MouseEvent, use } from 'react'
 import { toast } from 'sonner'
@@ -15,7 +15,7 @@ import { formatCurrency } from '@/utils/formatCurrency'
 type ProductInfoTypes = {
   id: number
   name: string
-  image: string
+  image: StaticImageData
   slug: string
   price: number
   category: string
