@@ -1,9 +1,6 @@
 import { Eye, EyeOff } from 'lucide-react'
-import Image from 'next/image'
 import { FieldError, UseFormRegister } from 'react-hook-form'
 
-import eye from '@/assets/eye.svg'
-import eyeOff from '@/assets/eye-off.svg'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useShowPassword } from '@/hooks/useShowPassword'
