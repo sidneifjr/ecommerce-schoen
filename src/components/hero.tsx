@@ -1,6 +1,7 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 
-// import product3 from '@/assets/products/product-3.png'
+import heroImage from '@/assets/products/hero-image.png'
+
 import { H1 } from './typography/h1'
 
 export function Hero() {
@@ -16,15 +17,15 @@ export function Hero() {
       </div>
 
       <div className="flex-1">
-        {/* <Image
-          src={product3}
+        <Image
+          src={heroImage}
           alt="hero image"
           width={0}
           height={0}
           quality={100}
           sizes="100vw"
           className="h-full w-full object-contain"
-        /> */}
+        />
       </div>
     </div>
   )

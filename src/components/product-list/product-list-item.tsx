@@ -52,10 +52,10 @@ export function ProductItem({
             <Image
               src={image}
               alt={name}
-              width={0}
-              height={0}
+              width={290}
+              height={330}
               sizes="100vw"
-              className="h-full w-full rounded transition-transform group-hover:scale-110"
+              className="h-80 w-72 rounded object-contain transition-transform group-hover:scale-110"
             />
           </div>
         </CardHeader>

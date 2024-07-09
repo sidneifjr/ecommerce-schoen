@@ -29,7 +29,7 @@ export const ProductCarouselThumb: React.FC<PropType> = (props) => {
           width={0}
           height={0}
           sizes="100vw"
-          className="h-full w-full rounded-lg object-cover"
+          className="h-full w-full rounded-lg object-contain"
         />
       </Button>
     </div>
