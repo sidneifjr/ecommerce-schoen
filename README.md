@@ -49,7 +49,6 @@ Feito com Node, v20.12.2.
 - Sonner
 - pnpm
 
-
 ## Sobre o projeto
 
 Foi uma experiência enriquecedora e repleto de desafios, expondo oportunidades para experimentar com diferentes features do React e Next.js para solucionar vários problemas.
@@ -113,9 +112,16 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
             └── pix.svg
             └── product-image.png
             └── 📁products
+                └── botas.png
+                └── chinelos.png
+                └── chuteira.png
+                └── hero-image.png
                 └── product-1.png
                 └── product-2.png
                 └── product-3.png
+                └── sandalia.png
+                └── sapatenis.png
+                └── tenis.png
         └── 📁components
             └── 📁cart
                 └── cart-details.tsx
@@ -156,7 +162,6 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
                 └── button.tsx
                 └── card.tsx
                 └── carousel.tsx
-                └── checkbox.tsx
                 └── dialog.tsx
                 └── input.tsx
                 └── label.tsx
@@ -192,8 +197,9 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
     └── vitest.config.ts
 ```
 
-## Pontos de melhoria
+## To Do
 
-1) Testes unitários mais extensivos.
-2) Testes e2e, para validar Server Components (conforme recomendado pelos docs do Next.js).
-3) Refatorar useFilterProducts, de forma a permitir amelhor interação entre as três funcionalidades de filtragem.
+- [ ] Testes unitários mais extensivos.
+- [ ] Testes e2e, para validar Server Components (conforme recomendado pelos docs do Next.js).
+- [ ] Refatorar useFilterProducts, de forma a permitir amelhor interação entre as três funcionalidades de filtragem.
+- [ ] Limpar itens do carrinho, ao finalizar o fluxo;
