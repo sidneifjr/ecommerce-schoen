@@ -3,6 +3,7 @@ import '@fontsource-variable/inter'
 import '@fontsource/poppins'
 
 import type { Metadata } from 'next'
+import { ViewTransitions } from 'next-view-transitions'
 
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
@@ -22,16 +23,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <CartProvider>
-          <Header />
+    <ViewTransitions>
+      <html lang="en">
+        <body>
+          <CartProvider>
+            <Header />
 
-          <main className="pb-12">{children}</main>
+            <main className="pb-12">{children}</main>
 
-          <Toaster richColors />
-        </CartProvider>
-      </body>
-    </html>
+            <Toaster richColors />
+          </CartProvider>
+        </body>
+      </html>
+    </ViewTransitions>
   )
 }

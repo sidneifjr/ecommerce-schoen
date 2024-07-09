@@ -1,7 +1,7 @@
 'use client'
 
 import Image, { StaticImageData } from 'next/image'
-import { useRouter } from 'next/navigation'
+import { Link } from 'next-view-transitions'
 import { MouseEvent, use } from 'react'
 import { toast } from 'sonner'
 
@@ -31,8 +31,6 @@ export function ProductInfo({
 }: ProductInfoTypes) {
   const { handleCartAction } = use(CartContext)
 
-  const router = useRouter()
-
   function handleItem(e: MouseEvent<HTMLButtonElement>) {
     e.preventDefault()
 
@@ -46,8 +44,6 @@ export function ProductInfo({
       price,
       category,
     })
-
-    router.push('/cart')
   }
 
   return (
@@ -92,8 +88,14 @@ export function ProductInfo({
         variant="outline"
         className="w-full rounded border-green-light bg-green-light p-6 text-sm leading-6 text-white transition-colors hover:bg-white hover:text-green-light"
         onClick={(e) => handleItem(e)}
+        asChild
       >
-        Adicionar ao carrinho
+        <Link
+          href="/cart"
+          className="rounded border-green-light bg-green-light p-6 text-sm leading-6 text-white transition-colors hover:bg-white hover:text-green-light"
+        >
+          Adicionar ao carrinho
+        </Link>
       </Button>
     </div>
   )
