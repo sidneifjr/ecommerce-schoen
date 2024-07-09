@@ -10,8 +10,8 @@ import { CartProvider } from '@/contexts/cart-context'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | E-Commerce Flow',
-    default: 'Home | E-Commerce Flow',
+    template: '%s | E-Commerce Schoen',
+    default: 'Home | E-Commerce Schoen',
   },
   description: 'Estilo e conforto para os seus pés',
 }
