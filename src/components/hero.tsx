@@ -6,10 +6,10 @@ import { H1 } from './typography/h1'
 export function Hero() {
   return (
     <div
-      className="flex justify-between bg-green-light lg:max-h-96 lg:min-h-96"
+      className="mx-auto mt-6 flex w-full max-w-[1232px] justify-between bg-green-light lg:max-h-96 lg:min-h-96"
       data-testid="hero"
     >
-      <div className="flex flex-1 items-center pl-6 xl:pl-[100px] 2xl:justify-center">
+      <div className="flex flex-1 items-center pl-6 2xl:justify-center">
         <H1 className="max-w-[240px] font-poppins text-xl font-semibold leading-6 text-white md:max-w-[419px] md:text-3xl lg:text-5xl lg:leading-[64px]">
           Estilo e conforto para os seus pés
         </H1>
