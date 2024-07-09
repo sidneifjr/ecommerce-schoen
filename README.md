@@ -201,5 +201,5 @@ Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso
 
 - [ ] Testes unitários mais extensivos.
 - [ ] Testes e2e, para validar Server Components (conforme recomendado pelos docs do Next.js).
-- [ ] Refatorar useFilterProducts, de forma a permitir amelhor interação entre as três funcionalidades de filtragem.
+- [ ] Refatorar useFilterProducts.
 - [ ] Limpar itens do carrinho, ao finalizar o fluxo;
